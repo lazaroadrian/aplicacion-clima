@@ -53,6 +53,7 @@ export const WeatherApp = () => {
           <h2>{dataClima.name}</h2>
           <p>Temperatura: {parseInt(dataClima.main.temp - difKelvin)}°C</p>
           <p>Condición meteorológica: {dataClima.weather[0].description}</p>
+          <img src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`} />
         </div>
       )}
     </div>
